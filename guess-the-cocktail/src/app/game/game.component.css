@@ -1,0 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.game-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.leaderboard-container {
+  flex: 0 0 300px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #4b4944;
+}
+
+
+h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Red Hat Display', sans-serif;
+}
+

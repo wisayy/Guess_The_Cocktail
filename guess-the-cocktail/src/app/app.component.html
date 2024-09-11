@@ -1,0 +1,12 @@
+<router-outlet></router-outlet>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center align-items-center" *ngIf="!isGameStarted">
+  <div class="d-flex flex-column align-items-center">
+    <h1>Guess the Cocktail</h1>
+    <div class="form-group w-100">
+      <form (ngSubmit)="startGame()" class="w-100">
+        <input type="text" class="form-control mb-3 text-center" placeholder="Enter your name" [(ngModel)]="playerName" name="playerName" required />
+        <button type="submit"  class=" btn btn-primary btn-lg w-100">Start game!</button>
+      </form>
+    </div>
+  </div>
+</div>
