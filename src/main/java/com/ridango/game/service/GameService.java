@@ -69,11 +69,11 @@ public class GameService {
             game = startGame(playerName);
         } else {
             game.setAttemptsLeft(game.getAttemptsLeft() - 1);
+            game.setScore(Math.max(game.getScore() - 10, 0)); // Decrease score by 50 points but not below 0
             revealLetters(game);
             if (game.getAttemptsLeft() <= 0) {
                 revealAllLetters(game);
                 ongoingGames.remove(playerName);
-                game.setScore(Math.max(game.getScore() - 50, 0)); // Decrease score by 50 points but not below 0
                 savePlayerScore(playerName, game.getScore());
             }
         }
